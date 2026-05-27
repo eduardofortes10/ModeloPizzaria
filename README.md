@@ -1,16 +1,46 @@
-# React + Vite
+# Pizzaria Bella Massa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page ficticia para uma pizzaria artesanal, criada como modelo profissional para portfolio freelancer. O projeto tem foco em conversao, visual apetitoso, navegacao por ancoras, menu mobile e chamadas para pedido via WhatsApp.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- Lucide React
 
-## React Compiler
+## Como rodar localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Depois acesse a URL exibida no terminal, normalmente `http://localhost:5173`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build de producao
+
+```bash
+npm run build
+```
+
+Para visualizar o build localmente:
+
+```bash
+npm run preview
+```
+
+## Deploy na Vercel
+
+1. Suba o projeto para um repositorio no GitHub.
+2. Acesse a Vercel e clique em `Add New Project`.
+3. Importe o repositorio.
+4. Mantenha as configuracoes padrao do Vite:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+5. Clique em `Deploy`.
+
+## Observacao
+
+Este site e um projeto ficticio para demonstracao de habilidades em landing pages comerciais. Nome, endereco, WhatsApp, avaliacoes, precos e promocoes sao exemplos.
