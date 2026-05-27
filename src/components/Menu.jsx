@@ -4,7 +4,7 @@ import { pizzas, whatsappLink } from '../data/siteData'
 
 function Menu() {
   return (
-    <section id="cardapio" className="bg-white py-20 sm:py-24">
+    <section id="cardapio" className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Cardapio"
@@ -25,14 +25,14 @@ function Menu() {
                   className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6">
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-2xl font-black text-stone-950">{pizza.name}</h3>
+              <div className="p-5 sm:p-6">
+                <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:items-start min-[420px]:justify-between min-[420px]:gap-4">
+                  <h3 className="text-xl font-black text-stone-950 sm:text-2xl">{pizza.name}</h3>
                   <span className="shrink-0 rounded-full bg-amber-100 px-3 py-1 text-sm font-black text-red-800">
                     {pizza.price}
                   </span>
                 </div>
-                <p className="mt-3 min-h-14 leading-7 text-stone-600">{pizza.description}</p>
+                <p className="mt-3 leading-7 text-stone-600 sm:min-h-14">{pizza.description}</p>
                 <a
                   href={whatsappLink}
                   target="_blank"

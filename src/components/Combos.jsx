@@ -4,7 +4,7 @@ import { combos, whatsappLink } from '../data/siteData'
 
 function Combos() {
   return (
-    <section id="combos" className="bg-stone-950 py-20 text-white sm:py-24">
+    <section id="combos" className="bg-stone-950 py-16 text-white sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Combos"
@@ -16,7 +16,7 @@ function Combos() {
           {combos.map((combo) => (
             <article
               key={combo.name}
-              className={`relative rounded-3xl border p-7 transition hover:-translate-y-1 ${
+              className={`relative rounded-3xl border p-6 transition hover:-translate-y-1 sm:p-7 ${
                 combo.featured
                   ? 'border-amber-300 bg-amber-400 text-stone-950 shadow-2xl shadow-amber-500/20 lg:-mt-5'
                   : 'border-white/10 bg-white/10 text-white'
@@ -33,7 +33,7 @@ function Combos() {
                 <CheckCircle2 className={combo.featured ? 'text-red-800' : 'text-amber-300'} />
                 <p className={combo.featured ? 'text-stone-800' : 'text-stone-200'}>{combo.items}</p>
               </div>
-              <strong className="mt-8 block text-4xl font-black">{combo.price}</strong>
+              <strong className="mt-8 block text-3xl font-black sm:text-4xl">{combo.price}</strong>
               <a
                 href={whatsappLink}
                 target="_blank"

@@ -9,14 +9,14 @@ function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-stone-950/90 text-white shadow-2xl backdrop-blur">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
         <a href="#inicio" className="flex items-center gap-3" onClick={closeMenu}>
-          <span className="grid size-11 place-items-center rounded-full bg-gradient-to-br from-red-700 to-amber-500 text-white shadow-lg shadow-red-950/30">
-            <Pizza size={24} strokeWidth={2.4} />
+          <span className="grid size-10 place-items-center rounded-full bg-gradient-to-br from-red-700 to-amber-500 text-white shadow-lg shadow-red-950/30 sm:size-11">
+            <Pizza size={22} strokeWidth={2.4} />
           </span>
           <span className="leading-tight">
-            <span className="block text-lg font-black">Bella Massa</span>
-            <span className="block text-xs font-semibold uppercase tracking-wider text-amber-300">
+            <span className="block text-base font-black sm:text-lg">Bella Massa</span>
+            <span className="block text-[11px] font-semibold uppercase tracking-wider text-amber-300 sm:text-xs">
               Pizzaria artesanal
             </span>
           </span>
@@ -45,7 +45,7 @@ function Header() {
 
         <button
           type="button"
-          className="grid size-11 place-items-center rounded-full border border-white/15 text-white lg:hidden"
+          className="grid size-10 place-items-center rounded-full border border-white/15 text-white sm:size-11 lg:hidden"
           onClick={() => setIsOpen((current) => !current)}
           aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
           aria-expanded={isOpen}

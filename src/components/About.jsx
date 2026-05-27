@@ -3,7 +3,7 @@ import SectionHeader from './SectionHeader'
 
 function About() {
   return (
-    <section id="sobre" className="bg-red-50 py-20 sm:py-24">
+    <section id="sobre" className="bg-red-50 py-16 sm:py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
         <div className="relative">
           <img
@@ -11,7 +11,7 @@ function About() {
             alt="Pizza saindo do forno em uma pizzaria"
             className="aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl"
           />
-          <div className="absolute -bottom-7 left-5 right-5 rounded-3xl bg-white p-5 shadow-xl sm:left-auto sm:right-8 sm:w-72">
+          <div className="absolute -bottom-6 left-4 right-4 rounded-3xl bg-white p-4 shadow-xl sm:-bottom-7 sm:left-auto sm:right-8 sm:w-72 sm:p-5">
             <strong className="block text-3xl font-black text-red-800">Desde 2018</strong>
             <span className="mt-1 block font-semibold text-stone-600">Receitas de familia com operacao moderna.</span>
           </div>

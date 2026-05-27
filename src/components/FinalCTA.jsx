@@ -3,12 +3,12 @@ import { whatsappLink } from '../data/siteData'
 
 function FinalCTA() {
   return (
-    <section className="bg-red-900 px-4 py-20 text-white sm:px-6 lg:px-8">
+    <section className="bg-red-900 px-4 py-16 text-white sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
         <span className="rounded-full bg-amber-400 px-4 py-1.5 text-sm font-black uppercase tracking-wide text-stone-950">
           Pedido rapido
         </span>
-        <h2 className="mt-5 text-4xl font-black leading-tight sm:text-5xl">
+        <h2 className="mt-5 text-3xl font-black leading-tight sm:text-5xl">
           Bateu a fome? Peca sua pizza agora.
         </h2>
         <p className="mt-4 max-w-2xl text-lg leading-8 text-red-50">

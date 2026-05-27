@@ -4,7 +4,7 @@ import { testimonials } from '../data/siteData'
 
 function Testimonials() {
   return (
-    <section id="avaliacoes" className="bg-white py-20 sm:py-24">
+    <section id="avaliacoes" className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Avaliacoes"
@@ -14,7 +14,7 @@ function Testimonials() {
 
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((item) => (
-            <article key={item.name} className="rounded-3xl border border-stone-200 bg-stone-50 p-7 shadow-sm">
+            <article key={item.name} className="rounded-3xl border border-stone-200 bg-stone-50 p-6 shadow-sm sm:p-7">
               <div className="mb-5 flex text-amber-500">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Star key={star} size={19} fill="currentColor" />

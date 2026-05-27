@@ -6,8 +6,8 @@ function SectionHeader({ eyebrow, title, description, align = 'center' }) {
       <span className="rounded-full bg-amber-100 px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-red-800">
         {eyebrow}
       </span>
-      <h2 className="text-3xl font-black leading-tight text-stone-950 sm:text-4xl">{title}</h2>
-      {description && <p className="text-base leading-7 text-stone-600 sm:text-lg">{description}</p>}
+      <h2 className="text-2xl font-black leading-tight text-stone-950 sm:text-4xl">{title}</h2>
+      {description && <p className="text-sm leading-7 text-stone-600 sm:text-lg">{description}</p>}
     </div>
   )
 }

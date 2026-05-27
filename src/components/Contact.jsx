@@ -11,7 +11,7 @@ function Contact() {
   ]
 
   return (
-    <section id="contato" className="bg-amber-50 py-20 sm:py-24">
+    <section id="contato" className="bg-amber-50 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Localizacao e horario"
@@ -22,7 +22,7 @@ function Contact() {
         <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
           <div className="grid gap-4 sm:grid-cols-2">
             {info.map(([Icon, title, text]) => (
-              <div key={title} className="rounded-3xl bg-white p-6 shadow-sm">
+              <div key={title} className="rounded-3xl bg-white p-5 shadow-sm sm:p-6">
                 <Icon className="mb-5 text-red-800" size={28} />
                 <h3 className="text-lg font-black text-stone-950">{title}</h3>
                 <p className="mt-2 leading-7 text-stone-600">{text}</p>
@@ -30,12 +30,12 @@ function Contact() {
             ))}
           </div>
 
-          <div className="flex min-h-80 flex-col justify-between rounded-3xl bg-stone-950 p-8 text-white shadow-2xl">
+          <div className="flex min-h-80 flex-col justify-between rounded-3xl bg-stone-950 p-6 text-white shadow-2xl sm:p-8">
             <div>
               <span className="rounded-full bg-amber-400 px-4 py-1.5 text-sm font-black text-stone-950">
                 Atendimento online
               </span>
-              <h3 className="mt-6 text-3xl font-black">Monte seu pedido pelo WhatsApp em poucos minutos.</h3>
+              <h3 className="mt-6 text-2xl font-black sm:text-3xl">Monte seu pedido pelo WhatsApp em poucos minutos.</h3>
               <p className="mt-4 leading-8 text-stone-300">
                 Fale com a equipe, confirme sabores, tire duvidas e receba o prazo antes de finalizar.
               </p>
